@@ -7,16 +7,16 @@ export function ShowRefUser(){
     let emailRef = useRef('sfg@gmail.com');
     let cityRef = useRef('Lviv');
 
-    const phoneRegex = /^\+?[0-9]{7,}$/;
-    const phone = phoneRef.current.value;
-    if(!phoneRegex.test(phone)){
-        alert('Please enter a valid phone number.');
-        return;
-    }
+    // const phoneRegex = /^\+?[0-9]{7,}$/;
+    // const phone = phoneRef.current.value;
+    // if(!phoneRegex.test(phone)){
+    //     alert('Please enter a valid phone number.');
+    //     return;
+    // }
     
     const handleSubmit=(event)=>{
         event.preventDefault();
-        alert(`${firstnameRef.current.value} ${lastnameRef.current.value} ${phone} ${emailRef.current.value} ${cityRef.current.value}`);
+        alert(`${firstnameRef.current.value} ${lastnameRef.current.value} ${phoneRef.current.value} ${emailRef.current.value} ${cityRef.current.value}`);
     }
 
     return (
